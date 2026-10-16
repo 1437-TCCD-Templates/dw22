@@ -9,7 +9,7 @@ public:
   std::string get_name() const;
 
 protected:
-  std::string name_;
+  std::string m_name;
 };
 
 class Dog : public Animal {
@@ -18,7 +18,7 @@ public:
   std::string get_breed() const;
 
 private:
-  std::string breed_;
+  std::string m_breed;
 };
 
 #endif

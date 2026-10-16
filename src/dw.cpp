@@ -1,14 +1,14 @@
 #include "dw.h"
 
-Animal::Animal(const std::string &name){name_ = name}
+Animal::Animal(const std::string &name){m_name = name}
 
 std::string Animal::get_name() const {
-  return name_;
+  return m_name;
 }
 
 Dog::Dog(const std::string &name, const std::string &breed) : Animal() {
-  breed_ = breed;
+  m_breed = breed;
 }
 
 std::string Dog::get_breed() {
-  return breed_;
+  return m_breed;
